@@ -65,11 +65,14 @@ p { color: var(--muted); line-height: 1.7; }
 .section.soft { background: var(--bg-soft); }
 .section-heading { max-width: 720px; margin-bottom: 36px; }
 .cards.two-cols { display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; }
-.module-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.accountants-card { grid-column: span 2; }
+
 .solution-card, .price-card, .step { background: var(--card); border: 1px solid var(--line); border-radius: 28px; padding: 30px; box-shadow: 0 16px 36px rgba(20,32,24,.05); }
+.module-grid .solution-card { padding: 24px; border-radius: 24px; box-shadow: 0 12px 28px rgba(20,32,24,.045); }
+.module-grid .solution-card p { margin: 0 0 12px; line-height: 1.6; }
+.module-grid .solution-card ul { margin: 0; line-height: 1.65; }
 .solution-card.featured { background: linear-gradient(135deg, #ffffff, #ecfaef); border-color: rgba(81,185,106,.35); }
 .icon { font-size: 2rem; margin-bottom: 14px; }
+.module-grid .icon { font-size: 1.75rem; margin-bottom: 12px; }
 ul { padding-left: 18px; color: var(--muted); line-height: 2; }
 .benefits-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 42px; align-items: center; }
 .large-text { font-size: 1.12rem; }
@@ -97,13 +100,12 @@ textarea { min-height: 110px; resize: vertical; }
 .footer-content { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
 .footer p { margin: 0; }
 @media (max-width: 1100px) {
-  .pricing { grid-template-columns: repeat(2, 1fr); }
-}
+
 
 @media (max-width: 900px) {
   .nav-links, .nav-cta { display: none; }
   .hero-grid, .cards.two-cols, .benefits-grid, .cta-box, .module-grid { grid-template-columns: 1fr; }
-  .accountants-card { grid-column: auto; }
+
   .steps, .pricing { grid-template-columns: 1fr; }
   .price-card.popular { transform: none; }
   .hero { padding-top: 56px; }
