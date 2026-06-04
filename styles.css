@@ -38,7 +38,7 @@ h2 { font-size: clamp(2rem, 4vw, 3.4rem); letter-spacing: -0.065em; line-height:
 h3 { margin: 0 0 10px; font-size: 1.3rem; letter-spacing: -0.03em; }
 p { color: var(--muted); line-height: 1.7; }
 .hero-copy > p { font-size: 1.2rem; max-width: 630px; }
-.hero-actions { display: flex; gap: 14px; margin: 32px 0; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin: 32px 0; }
 .btn { display: inline-flex; align-items: center; justify-content: center; border-radius: 16px; padding: 14px 20px; font-weight: 800; border: 1px solid transparent; cursor: pointer; }
 .btn.primary { background: var(--primary); color: white; box-shadow: 0 12px 28px rgba(81, 185, 106, .3); }
 .btn.secondary { background: white; border-color: var(--line); }
@@ -65,6 +65,8 @@ p { color: var(--muted); line-height: 1.7; }
 .section.soft { background: var(--bg-soft); }
 .section-heading { max-width: 720px; margin-bottom: 36px; }
 .cards.two-cols { display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; }
+.module-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.accountants-card { grid-column: span 2; }
 .solution-card, .price-card, .step { background: var(--card); border: 1px solid var(--line); border-radius: 28px; padding: 30px; box-shadow: 0 16px 36px rgba(20,32,24,.05); }
 .solution-card.featured { background: linear-gradient(135deg, #ffffff, #ecfaef); border-color: rgba(81,185,106,.35); }
 .icon { font-size: 2rem; margin-bottom: 14px; }
@@ -77,12 +79,13 @@ ul { padding-left: 18px; color: var(--muted); line-height: 2; }
 .benefit span { color: var(--text); }
 .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .step span { display: inline-flex; width: 38px; height: 38px; border-radius: 14px; align-items: center; justify-content: center; background: var(--accent); color: var(--primary-dark); font-weight: 900; margin-bottom: 20px; }
-.pricing { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: stretch; }
+.pricing { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; align-items: stretch; }
 .price-card { position: relative; }
 .price-card.popular { border: 2px solid var(--primary); transform: translateY(-10px); }
 .popular-label { position: absolute; top: 18px; right: 18px; background: var(--text); color: white; border-radius: 999px; padding: 7px 10px; font-size: .75rem; font-weight: 900; }
 .price-card strong { display: block; font-size: 2rem; letter-spacing: -0.04em; margin: 22px 0 2px; }
 .price-card small { color: var(--muted); }
+.pricing-note { margin: 28px 0 0; padding: 20px 22px; background: rgba(255,255,255,.72); border: 1px solid var(--line); border-radius: 22px; font-weight: 700; }
 .cta-section { padding-bottom: 100px; }
 .cta-box { background: #102017; color: white; border-radius: 34px; padding: 42px; display: grid; grid-template-columns: .95fr 1.05fr; gap: 36px; box-shadow: var(--shadow); }
 .cta-box p { color: rgba(255,255,255,.72); }
@@ -93,9 +96,14 @@ textarea { min-height: 110px; resize: vertical; }
 .footer { border-top: 1px solid var(--line); padding: 30px 0; }
 .footer-content { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
 .footer p { margin: 0; }
+@media (max-width: 1100px) {
+  .pricing { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 900px) {
   .nav-links, .nav-cta { display: none; }
-  .hero-grid, .cards.two-cols, .benefits-grid, .cta-box { grid-template-columns: 1fr; }
+  .hero-grid, .cards.two-cols, .benefits-grid, .cta-box, .module-grid { grid-template-columns: 1fr; }
+  .accountants-card { grid-column: auto; }
   .steps, .pricing { grid-template-columns: 1fr; }
   .price-card.popular { transform: none; }
   .hero { padding-top: 56px; }
