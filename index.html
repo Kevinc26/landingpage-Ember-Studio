@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ClearBiz | Suite SaaS modular para pymes y contadores</title>
+  <title>ClearBiz | Suite sencilla para micro y pequeñas empresas</title>
+  <meta name="description" content="ClearBiz conecta ventas, facturación, inventario, gastos, planillas y contador en una suite sencilla para micro y pequeñas empresas." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,14 +13,14 @@
 <body>
   <header class="navbar">
     <div class="container nav-content">
-      <a href="#" class="logo"><span>Clear</span>Biz</a>
-      <nav class="nav-links">
-        <a href="#soluciones">Soluciones</a>
-        <a href="#beneficios">Beneficios</a>
-        <a href="#planes">Planes</a>
-        <a href="#contacto">Contacto</a>
+      <a href="#" class="logo" aria-label="ClearBiz inicio"><span>Clear</span>Biz</a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#formas">Formas de trabajar</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#resuelve">Lo que resuelve</a>
+        <a href="#demo">Demo</a>
       </nav>
-      <a class="nav-cta" href="#contacto">Solicitar demo</a>
+      <a class="nav-cta" href="mailto:kevincascante26@outlook.com?subject=Solicitud%20de%20demo%20ClearBiz">Solicitar demo</a>
     </div>
   </header>
 
@@ -27,48 +28,64 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="badge">Suite SaaS modular para pymes, restaurantes, tiendas y contadores</div>
-          <h1>Controlá ventas, inventario, caja y gestión contable sin complicarte.</h1>
-          <p>ClearBiz es una plataforma en la nube que reúne módulos para operar negocios pequeños, emprendedores y oficinas contables con acceso web, infraestructura incluida y crecimiento por etapas.</p>
+          <p class="badge">ClearBiz: la suite sencilla para manejar tu negocio y trabajar mejor con tu contador.</p>
+          <h1>Todo tu negocio en orden, sin enredos.</h1>
+          <p class="hero-subtitle">ClearBiz conecta ventas, facturación, inventario, gastos, planillas y contador en una sola suite sencilla para micro y pequeñas empresas.</p>
           <div class="hero-actions">
-            <a href="#contacto" class="btn primary">Solicitar demo</a>
-            <a href="#planes" class="btn secondary">Quiero una implementación</a>
-            <a href="#soluciones" class="btn secondary">Ver módulos</a>
+            <a href="mailto:kevincascante26@outlook.com?subject=Solicitud%20de%20demo%20ClearBiz" class="btn primary">Solicitar demo</a>
+            <a href="#modulos" class="btn secondary">Ver módulos</a>
           </div>
-          <div class="trust-row">
-            <span>✓ Acceso web incluido</span>
-            <span>✓ Infraestructura en la nube</span>
-            <span>✓ Mantenimiento y actualizaciones</span>
+          <div class="trust-row" aria-label="Características principales">
+            <span>Portal claro para cada área</span>
+            <span>Información lista para el contador</span>
+            <span>Reportes simples para decidir</span>
           </div>
         </div>
-        <div class="hero-card">
-          <div class="app-window">
-            <div class="window-top"><span></span><span></span><span></span></div>
-            <div class="dashboard-mini">
-              <div class="metric big">
-                <small>Ventas de hoy</small>
-                <strong>₡185,450</strong>
-                <em>+18% vs ayer</em>
-              </div>
-              <div class="metric">
-                <small>Caja actual</small>
-                <strong>₡92,300</strong>
-              </div>
-              <div class="metric warning">
-                <small>Bajo stock</small>
-                <strong>8 productos</strong>
-              </div>
-              <div class="chart-bars">
-                <span style="height: 45%"></span>
-                <span style="height: 70%"></span>
-                <span style="height: 55%"></span>
-                <span style="height: 90%"></span>
-                <span style="height: 62%"></span>
-              </div>
-              <div class="product-list">
-                <p><b>Café frío</b><span>₡28,000</span></p>
-                <p><b>Casado pollo</b><span>₡42,500</span></p>
-                <p><b>Repostería</b><span>₡19,800</span></p>
+
+        <div class="hero-card" aria-label="Vista previa del portal ClearBiz">
+          <div class="portal-window">
+            <div class="window-top">
+              <span></span><span></span><span></span>
+              <strong>Portal ClearBiz</strong>
+            </div>
+            <div class="portal-layout">
+              <aside class="portal-sidebar">
+                <span class="active">Inicio</span>
+                <span>Ventas</span>
+                <span>Inventario</span>
+                <span>Gastos</span>
+                <span>Contador</span>
+              </aside>
+              <div class="portal-content">
+                <div class="portal-header">
+                  <small>Resumen del negocio</small>
+                  <strong>Junio</strong>
+                </div>
+                <div class="metric-grid">
+                  <div class="metric business">
+                    <small>Ventas</small>
+                    <strong>₡185,450</strong>
+                    <span>Hoy</span>
+                  </div>
+                  <div class="metric platform">
+                    <small>Facturas</small>
+                    <strong>24</strong>
+                    <span>Emitidas</span>
+                  </div>
+                  <div class="metric accountant">
+                    <small>Pendientes</small>
+                    <strong>6</strong>
+                    <span>Para contador</span>
+                  </div>
+                </div>
+                <div class="app-cards">
+                  <span>Caja y Ventas</span>
+                  <span>Facturación</span>
+                  <span>Inventario</span>
+                  <span>Planillas</span>
+                  <span>Reportes</span>
+                  <span>Documentos</span>
+                </div>
               </div>
             </div>
           </div>
@@ -76,202 +93,126 @@
       </div>
     </section>
 
-    <section id="soluciones" class="section">
+    <section id="formas" class="section">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">Dos formas de trabajar</span>
+          <h2>Una suite para el negocio y para el contador.</h2>
+          <p>ClearBiz separa las tareas diarias del negocio y la revisión contable, pero mantiene la información conectada y ordenada.</p>
+        </div>
+
+        <div class="work-modes">
+          <article class="mode-card business-card">
+            <div class="mode-label">ClearBiz Negocio</div>
+            <h3>Para dueños de negocio</h3>
+            <p>Para dueños de negocio que necesitan registrar ventas, controlar inventario, emitir facturas, registrar gastos, manejar planillas y ver cómo va su negocio.</p>
+          </article>
+
+          <article class="mode-card accountant-card">
+            <div class="mode-label">ClearBiz Contador</div>
+            <h3>Para contadores</h3>
+            <p>Para contadores que llevan la información de varias empresas y necesitan revisar documentos, gastos, facturas, planillas, pendientes y cierres mensuales.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="modulos" class="section soft">
       <div class="container">
         <div class="section-heading">
-          <span class="eyebrow">Módulos ClearBiz</span>
-          <h2>Una suite SaaS modular para operar mejor</h2>
-          <p>Activá solo los módulos que necesitás hoy y ampliá la plataforma cuando tu negocio o cartera de clientes crezca.</p>
+          <span class="eyebrow">Módulos</span>
+          <h2>Aplicaciones claras para cada parte del trabajo.</h2>
+          <p>La experiencia se organiza como un portal de apps: cada módulo tiene una función concreta y un nombre en español.</p>
         </div>
-        <div class="cards module-grid">
-          <article class="solution-card featured">
-            <div class="icon">📦</div>
-            <h3>StockClear</h3>
-            <p>Inventario, productos, movimientos, stock bajo y trazabilidad operativa para tiendas, restaurantes, ferreterías y distribuidores.</p>
-            <ul>
-              <li>Productos y categorías</li>
-              <li>Movimientos de inventario</li>
-              <li>Alertas de stock bajo</li>
-              <li>Trazabilidad operativa</li>
+
+        <div class="modules-grid">
+          <article class="modules-panel business-panel">
+            <div class="panel-topline"></div>
+            <h3>ClearBiz Negocio</h3>
+            <ul class="module-list">
+              <li>Caja y Ventas</li>
+              <li>Facturación</li>
+              <li>Inventario</li>
+              <li>Gastos</li>
+              <li>Planillas</li>
+              <li>Clientes</li>
+              <li>Proveedores</li>
+              <li>Reportes</li>
             </ul>
           </article>
-          <article class="solution-card">
-            <div class="icon">🧾</div>
-            <h3>PayClear</h3>
-            <p>Planillas, colaboradores, boletas de pago, deducciones, historial y reportes de nómina para equipos pequeños.</p>
-            <ul>
-              <li>Colaboradores y planillas</li>
-              <li>Boletas de pago</li>
-              <li>Deducciones e historial</li>
-              <li>Reportes de nómina</li>
-            </ul>
-          </article>
-          <article class="solution-card">
-            <div class="icon">📄</div>
-            <h3>InvoiceClear</h3>
-            <p>Facturas, ingresos, gastos, comprobantes, cuentas por cobrar y preparación fiscal. Preparado para evolucionar hacia facturación electrónica adaptada a Costa Rica.</p>
-            <ul>
-              <li>Ingresos y gastos</li>
-              <li>Comprobantes</li>
-              <li>Cuentas por cobrar</li>
-              <li>Preparación fiscal</li>
-            </ul>
-          </article>
-          <article class="solution-card">
-            <div class="icon">💵</div>
-            <h3>CashClear</h3>
-            <p>Flujo de caja, ingresos, egresos, cuentas por pagar, cuentas por cobrar y salud financiera en un solo lugar.</p>
-            <ul>
-              <li>Flujo de caja</li>
-              <li>Ingresos y egresos</li>
-              <li>Cuentas por pagar</li>
-              <li>Salud financiera</li>
-            </ul>
-          </article>
-          <article class="solution-card accountants-card">
-            <div class="icon">👥</div>
-            <h3>ClearBiz para Contadores</h3>
-            <p>Portal para registrar clientes, asignarles módulos, dar seguimiento a tareas, vencimientos, documentos pendientes y mensualidades.</p>
-            <ul>
-              <li>Clientes contables</li>
-              <li>Módulos por cliente</li>
-              <li>Tareas y vencimientos</li>
-              <li>Documentos y mensualidades</li>
+
+          <article class="modules-panel accountant-panel">
+            <div class="panel-topline"></div>
+            <h3>ClearBiz Contador</h3>
+            <ul class="module-list">
+              <li>Empresas</li>
+              <li>Documentos</li>
+              <li>Pendientes</li>
+              <li>Facturas</li>
+              <li>Gastos</li>
+              <li>Planillas</li>
+              <li>Comunicación</li>
+              <li>Reportes</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="beneficios" class="section soft">
-      <div class="container benefits-grid">
-        <div>
-          <span class="eyebrow">Por qué funciona</span>
-          <h2>Diseñado para dueños y contadores que quieren claridad, no complicaciones.</h2>
-          <p class="large-text">Te ayudamos a pasar de cuadernos, notas de WhatsApp y hojas de Excel desordenadas a una operación más clara, profesional y disponible desde la web.</p>
-        </div>
-        <div class="benefit-list">
-          <div class="benefit"><strong>01</strong><span>Centralizás módulos para ventas, inventario, nómina, caja y contabilidad.</span></div>
-          <div class="benefit"><strong>02</strong><span>Trabajás en la nube con acceso web e infraestructura incluida.</span></div>
-          <div class="benefit"><strong>03</strong><span>Detectás vencimientos, tareas pendientes y productos con bajo stock.</span></div>
-          <div class="benefit"><strong>04</strong><span>Tenés reportes simples para decidir mejor y crecer con orden.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
+    <section id="resuelve" class="section">
+      <div class="container resolve-grid">
         <div class="section-heading">
-          <span class="eyebrow">Cómo empezamos</span>
-          <h2>Implementación acompañada</h2>
-          <p>No solo entregamos la app. Te ayudamos a configurar módulos, usuarios y procesos según tu negocio o cartera contable.</p>
+          <span class="eyebrow">Lo que resuelve</span>
+          <h2>Menos información perdida. Más control diario.</h2>
+          <p>ClearBiz se enfoca en problemas cotidianos de negocios pequeños y oficinas contables, sin convertir la operación en un sistema complejo.</p>
         </div>
-        <div class="steps">
-          <div class="step"><span>1</span><h3>Diagnóstico</h3><p>Entendemos cómo vendés, controlás inventario, gestionás clientes o registrás tareas contables.</p></div>
-          <div class="step"><span>2</span><h3>Configuración</h3><p>Cargamos productos, clientes, usuarios, módulos y estructura inicial de trabajo.</p></div>
-          <div class="step"><span>3</span><h3>Capacitación</h3><p>Te enseñamos a usar los módulos, revisar reportes y aprovechar el acceso web.</p></div>
-          <div class="step"><span>4</span><h3>Soporte</h3><p>Acompañamos los primeros días para ajustar ClearBiz a tu operación real.</p></div>
+
+        <div class="resolve-list">
+          <div class="resolve-item"><span>01</span><p>Ya no perdés comprobantes por WhatsApp.</p></div>
+          <div class="resolve-item"><span>02</span><p>Tu contador recibe la información ordenada.</p></div>
+          <div class="resolve-item"><span>03</span><p>Sabés cuánto vendiste y cuánto gastaste.</p></div>
+          <div class="resolve-item"><span>04</span><p>Ves productos bajos antes de quedarte sin inventario.</p></div>
+          <div class="resolve-item"><span>05</span><p>Cerrás caja con más control.</p></div>
+          <div class="resolve-item"><span>06</span><p>Podés trabajar con varias empresas desde un solo lugar.</p></div>
         </div>
       </div>
     </section>
 
-    <section id="planes" class="section soft">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Planes SaaS</span>
-          <h2>Planes claros para pymes y contadores</h2>
-          <p>Todos los planes incluyen acceso web, infraestructura en la nube, mantenimiento básico y actualizaciones de plataforma.</p>
-        </div>
-
-        <div class="pricing">
-          <article class="price-card">
-            <h3>Pyme Básico</h3>
-            <p>Ideal para negocios pequeños que quieren iniciar con un módulo.</p>
-            <strong>Desde $19/mes</strong>
-            <small>Para empezar con orden</small>
-            <ul>
-              <li>1 negocio</li>
-              <li>1 usuario</li>
-              <li>1 módulo ClearBiz</li>
-              <li>Acceso web</li>
-              <li>Infraestructura en la nube incluida</li>
-              <li>Mantenimiento básico</li>
-              <li>Actualizaciones de plataforma</li>
-            </ul>
-            <a href="#contacto" class="btn secondary full">Solicitar demo</a>
-          </article>
-
-          <article class="price-card popular">
-            <div class="popular-label">Recomendado</div>
-            <h3>Pyme Pro</h3>
-            <p>Ideal para negocios que quieren centralizar más áreas.</p>
-            <strong>Desde $39/mes</strong>
-            <small>Para operar varios módulos</small>
-            <ul>
-              <li>1 negocio</li>
-              <li>Hasta 3 usuarios</li>
-              <li>Acceso a varios módulos</li>
-              <li>Dashboard</li>
-              <li>Reportes básicos</li>
-              <li>Soporte básico</li>
-              <li>Infraestructura en la nube incluida</li>
-            </ul>
-            <a href="#contacto" class="btn primary full">Quiero una implementación</a>
-          </article>
-
-          <article class="price-card">
-            <h3>Contador Inicial</h3>
-            <p>Ideal para contadores independientes o equipos pequeños.</p>
-            <strong>Desde $49/mes</strong>
-            <small>Para gestionar clientes contables</small>
-            <ul>
-              <li>Hasta 5 usuarios</li>
-              <li>Hasta 25 clientes contables</li>
-              <li>Portal para contadores</li>
-              <li>Tareas y vencimientos</li>
-              <li>Documentos por cliente</li>
-              <li>Módulos asignables por cliente</li>
-              <li>Infraestructura en la nube incluida</li>
-            </ul>
-            <a href="#soluciones" class="btn secondary full">Ver módulos</a>
-          </article>
-
-          <article class="price-card">
-            <h3>Firma Contable</h3>
-            <p>Ideal para firmas contables en crecimiento.</p>
-            <strong>Desde $99/mes</strong>
-            <small>Para equipos con mayor volumen</small>
-            <ul>
-              <li>Hasta 10 usuarios</li>
-              <li>Hasta 60 clientes contables</li>
-              <li>Portal contable avanzado</li>
-              <li>Gestión de documentos</li>
-              <li>Seguimiento de mensualidades</li>
-              <li>Soporte prioritario</li>
-              <li>Infraestructura en la nube incluida</li>
-            </ul>
-            <a href="#contacto" class="btn secondary full">Quiero una implementación</a>
-          </article>
-        </div>
-
-        <p class="pricing-note">Los planes incluyen infraestructura en la nube, mantenimiento básico y actualizaciones de la plataforma. La implementación inicial se cotiza según las necesidades del cliente. Los límites de usuarios, clientes y almacenamiento pueden ampliarse según el plan.</p>
-      </div>
-    </section>
-
-    <section id="contacto" class="section cta-section">
+    <section id="demo" class="section cta-section">
       <div class="container cta-box">
-        <div>
-          <span class="eyebrow">Demo</span>
-          <h2>¿Querés ver cómo funcionaría en tu negocio?</h2>
-          <p>Contanos si sos pyme, restaurante, tienda, ferretería, distribuidor o contador y te mostramos una demo adaptada a tu operación.</p>
+        <div class="cta-copy">
+          <span class="eyebrow">Solicitar demo</span>
+          <h2>Conversemos sobre cómo ordenar tu operación.</h2>
+          <p>Completá el formulario y se preparará un correo dirigido a <a href="mailto:kevincascante26@outlook.com?subject=Solicitud%20de%20demo%20ClearBiz">kevincascante26@outlook.com</a>. Por ahora se usa mailto como solución inicial para recibir las solicitudes.</p>
         </div>
+
         <form class="contact-form" onsubmit="return handleSubmit(event)">
-          <input type="text" placeholder="Nombre" required>
-          <input type="text" placeholder="Tipo de negocio" required>
-          <input type="tel" placeholder="WhatsApp" required>
-          <textarea placeholder="¿Qué módulos o procesos te gustaría controlar mejor?"></textarea>
+          <div class="form-row">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Correo</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Teléfono</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="form-row">
+            <label for="company">Empresa</label>
+            <input id="company" name="company" type="text" autocomplete="organization" required>
+          </div>
+          <div class="form-row">
+            <label for="businessType">Tipo de negocio</label>
+            <input id="businessType" name="businessType" type="text" required>
+          </div>
+          <div class="form-row full-row">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" placeholder="Contanos qué querés ordenar o qué módulos te interesan."></textarea>
+          </div>
           <button class="btn primary full" type="submit">Enviar solicitud</button>
-          <p id="formMessage" class="form-message"></p>
+          <p id="formMessage" class="form-message" role="status"></p>
         </form>
       </div>
     </section>
@@ -280,7 +221,8 @@
   <footer class="footer">
     <div class="container footer-content">
       <a href="#" class="logo"><span>Clear</span>Biz</a>
-      <p>Suite SaaS modular para pymes y contadores en Costa Rica.</p>
+      <p>Suite sencilla para micro, pequeñas y medianas empresas.</p>
+      <a href="mailto:kevincascante26@outlook.com?subject=Solicitud%20de%20demo%20ClearBiz">kevincascante26@outlook.com</a>
     </div>
   </footer>
 
