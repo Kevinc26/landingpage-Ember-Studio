@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 150" role="img" aria-labelledby="enki-title enki-desc">
+  <title id="enki-title">Enki Agent</title>
+  <desc id="enki-desc">Logo de Enki Agent con red de nodos, brújula tecnológica y colores azul y violeta.</desc>
+  <g fill="none" fill-rule="evenodd">
+    <rect x="18" y="24" width="104" height="104" rx="30" fill="#EEF2FF"/>
+    <circle cx="70" cy="76" r="32" fill="#2563EB" opacity="0.13"/>
+    <path d="M70 42l17 35-35 17 17-52z" fill="#6D28D9"/>
+    <path d="M70 110L53 75l35-17-18 52z" fill="#2563EB"/>
+    <path d="M49 55l42 42M91 55L49 97" stroke="#8B5CF6" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+    <circle cx="49" cy="55" r="7" fill="#2563EB"/>
+    <circle cx="91" cy="55" r="7" fill="#7C3AED"/>
+    <circle cx="49" cy="97" r="7" fill="#7C3AED"/>
+    <circle cx="91" cy="97" r="7" fill="#2563EB"/>
+    <circle cx="70" cy="76" r="8" fill="#FFFFFF"/>
+    <text x="148" y="86" fill="#18233F" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" letter-spacing="-2">Enki <tspan fill="#6D28D9">Agent</tspan></text>
+    <path d="M152 106h42m15 0h42m15 0h42" stroke="#C7D2FE" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="203" cy="106" r="5" fill="#2563EB"/>
+    <circle cx="260" cy="106" r="5" fill="#6D28D9"/>
+  </g>
+</svg>

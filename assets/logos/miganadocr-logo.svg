@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 150" role="img" aria-labelledby="miganadocr-title miganadocr-desc">
+  <title id="miganadocr-title">MiGanadoCR</title>
+  <desc id="miganadocr-desc">Logo de MiGanadoCR con cabeza de ganado minimalista, etiqueta y líneas de finca en tonos verdes.</desc>
+  <g fill="none" fill-rule="evenodd">
+    <rect x="18" y="24" width="104" height="104" rx="30" fill="#E7F6EF"/>
+    <path d="M47 62c-13-14-17-28-10-36 12 2 22 11 30 27h6c8-16 18-25 30-27 7 8 3 22-10 36" stroke="#17825D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M43 65c0-16 12-28 27-28s27 12 27 28v20c0 16-12 28-27 28S43 101 43 85V65z" fill="#17825D"/>
+    <path d="M56 68c7 6 21 6 28 0" stroke="#CFE8A9" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="59" cy="82" r="4" fill="#F7F2DE"/>
+    <circle cx="81" cy="82" r="4" fill="#F7F2DE"/>
+    <path d="M62 98h16" stroke="#F7F2DE" stroke-width="5" stroke-linecap="round"/>
+    <path d="M101 94l14 14-14 14-14-14z" fill="#B78B55"/>
+    <circle cx="101" cy="108" r="3" fill="#F7F2DE"/>
+    <text x="148" y="86" fill="#164D39" font-family="Inter, Arial, sans-serif" font-size="45" font-weight="800" letter-spacing="-2">MiGanado<tspan fill="#17825D">CR</tspan></text>
+    <path d="M151 106c28-18 56-18 84 0s56 18 84 0" stroke="#A7D8B8" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>
