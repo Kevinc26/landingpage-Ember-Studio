@@ -86,10 +86,31 @@ h3 { margin: 0 0 12px; font-size: 1.28rem; letter-spacing: -0.035em; }
 .section-heading.centered { text-align: center; margin-left: auto; margin-right: auto; }
 .product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
 .product-card { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: 28px; padding: 28px; box-shadow: 0 16px 44px rgba(15,42,68,.07); }
-.product-icon { width: 54px; height: 54px; display: grid; place-items: center; border-radius: 17px; color: white; font-weight: 900; margin-bottom: 22px; }
-.clearbiz-card .product-icon { background: var(--blue); }
-.ganado-card .product-icon { background: var(--green); }
-.enki-card .product-icon { background: var(--teal); }
+.product-logo-wrap {
+  width: 100%;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 22px;
+}
+
+.product-logo {
+  width: 190px;
+  max-width: 100%;
+  height: 72px;
+  object-fit: contain;
+  object-position: left center;
+  display: block;
+}
+
+.ganado-card .product-logo {
+  width: 210px;
+}
+
+.enki-card .product-logo {
+  width: 195px;
+}
 .product-card ul { list-style: none; padding: 0; margin: 8px 0 24px; display: grid; gap: 12px; }
 .product-card li { position: relative; padding-left: 25px; color: var(--text); font-weight: 650; line-height: 1.45; }
 .product-card li::before { content: ""; position: absolute; left: 0; top: .55em; width: 9px; height: 9px; border-radius: 50%; background: var(--green); }
@@ -118,6 +139,10 @@ h3 { margin: 0 0 12px; font-size: 1.28rem; letter-spacing: -0.035em; }
 
 @media (max-width: 1050px) {
   .hero-grid, .why-grid, .process-grid, .cta-box { grid-template-columns: 1fr; }
+  .product-logo-wrap { height: 78px; }
+  .product-logo { width: 180px; height: 66px; }
+  .ganado-card .product-logo { width: 195px; }
+  .enki-card .product-logo { width: 180px; }
   .hero-grid { gap: 44px; }
   .product-grid { grid-template-columns: 1fr; }
 }
@@ -134,6 +159,10 @@ h3 { margin: 0 0 12px; font-size: 1.28rem; letter-spacing: -0.035em; }
 
 @media (max-width: 560px) {
   .container { width: min(100% - 28px, 1140px); }
+  .product-logo-wrap { height: 68px; margin-bottom: 18px; }
+  .product-logo { width: 160px; height: 58px; }
+  .ganado-card .product-logo { width: 175px; }
+  .enki-card .product-logo { width: 165px; }
   h1 { font-size: clamp(2.45rem, 15vw, 3.25rem); }
   .hero-actions { flex-direction: column; }
   .btn { width: 100%; }
