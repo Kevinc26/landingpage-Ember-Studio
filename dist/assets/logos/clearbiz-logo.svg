@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 150" role="img" aria-labelledby="clearbiz-title clearbiz-desc">
+  <title id="clearbiz-title">ClearBiz</title>
+  <desc id="clearbiz-desc">Logo de ClearBiz con panel de negocio, barras de crecimiento y checkmark en azul navy y teal.</desc>
+  <g fill="none" fill-rule="evenodd">
+    <rect x="18" y="24" width="104" height="104" rx="28" fill="#0F2A44"/>
+    <rect x="38" y="45" width="64" height="46" rx="10" fill="#E8F7F8" opacity="0.95"/>
+    <path d="M48 78l12 12 30-32" stroke="#1BA6A6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="43" y="101" width="12" height="15" rx="4" fill="#36C2BD"/>
+    <rect x="63" y="94" width="12" height="22" rx="4" fill="#69D6D2"/>
+    <rect x="83" y="84" width="12" height="32" rx="4" fill="#9BE7E3"/>
+    <path d="M142 48h32v54h-32z" fill="#1BA6A6" opacity="0.16"/>
+    <text x="150" y="87" fill="#0F2A44" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800" letter-spacing="-2">Clear<tspan fill="#1BA6A6">Biz</tspan></text>
+    <path d="M151 104h154" stroke="#D4E7EE" stroke-width="6" stroke-linecap="round"/>
+    <path d="M151 104h74" stroke="#1BA6A6" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>
