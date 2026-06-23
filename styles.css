@@ -171,3 +171,105 @@ h3 { margin: 0 0 12px; font-size: 1.28rem; letter-spacing: -0.035em; }
   .product-mini { grid-template-columns: 1fr; }
   .section { padding: 68px 0; }
 }
+
+.product-badge {
+  align-self: flex-start;
+  background: var(--green-soft);
+  color: var(--green);
+  border: 1px solid rgba(23,130,93,.14);
+  border-radius: 999px;
+  padding: 7px 11px;
+  font-size: .76rem;
+  font-weight: 850;
+  margin-bottom: 18px;
+}
+
+.product-card > p { margin-bottom: 28px; }
+
+.product-hero h1 { font-size: clamp(2.4rem, 5.5vw, 4.7rem); }
+
+.hero-panel {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+  padding: 34px;
+  min-height: 360px;
+  display: grid;
+  align-content: center;
+  gap: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-panel::after {
+  content: "";
+  position: absolute;
+  inset: auto -80px -100px auto;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(31,95,159,.16), transparent 68%);
+}
+
+.hero-panel img {
+  width: min(320px, 100%);
+  max-height: 130px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.hero-panel p {
+  font-size: 1.12rem;
+  margin: 0;
+  max-width: 430px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.info-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 30px;
+  box-shadow: 0 16px 44px rgba(15,42,68,.07);
+}
+
+.info-card p { margin-bottom: 0; }
+.info-card ul { margin: 20px 0 0; padding-left: 20px; color: var(--text); font-weight: 650; line-height: 1.75; }
+
+.feature-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.feature-grid li {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 22px;
+  font-weight: 850;
+  box-shadow: 0 14px 36px rgba(15,42,68,.06);
+}
+
+.process-list.split { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.notice {
+  background: #fff7ed;
+  color: #8a4b10;
+  border: 1px solid #fed7aa;
+  border-radius: 18px;
+  padding: 16px 18px;
+  font-weight: 700;
+}
+
+@media (max-width: 1050px) {
+  .detail-grid, .feature-grid, .process-list.split { grid-template-columns: 1fr; }
+}
